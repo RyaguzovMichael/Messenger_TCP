@@ -10,6 +10,11 @@ namespace ClientApp
 
         public List<string> MessagesHistory { get; private set; }
 
+        public ClientConsoleInterface()
+        {
+            MessagesHistory = new();
+        }
+
         public string GetNewMessage(string userName)
         {
             UpdateShowMessagesHistory();
